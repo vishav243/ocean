@@ -1,0 +1,70 @@
+/*Universal CSS Start Here*/
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing:border-box;
+}
+body{
+	background:#fff;
+}
+.container-max{
+	max-width: 1400px;
+	padding-left:100px;
+	padding-right: 100px;
+	margin: auto;
+}
+.d-flex{
+	display: flex;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+/*Universal CSS End Here*/
+
+header{
+	background: #4654ad;
+}
+
+.main-navbar{
+	justify-content: space-between;
+	align-items: center;
+	padding:20px 0px;
+}
+.logo{
+	max-width: 40px;
+	max-height: 40px;
+	position: relative;
+}
+.logo img{
+	border-radius: 25px;
+	box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.logo:hover{
+	animation:spin 10s linear infinite;
+}
+.navbar .navbar-list{
+	align-items: center;
+}
+.navbar .navbar-list .navbar-list-child{
+	padding: 0px 20px;
+}
+.navbar .navbar-list .navbar-list-child a{
+	font-size: 24px;
+	font-weight: 500;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.navbar .navbar-list .navbar-list-child a:hover{
+	font-size: 34px;
+	font-weight: 900;
+}	
+
+/*Keyframes Start Here*/
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
